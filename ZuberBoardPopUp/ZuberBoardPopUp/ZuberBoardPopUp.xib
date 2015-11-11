@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZuberBoardPopUp" customModule="ZuberBoardPopUp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Q-ZP-onY">
+                    <rect key="frame" x="373" y="10" width="35" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="4wU-Yz-mSD"/>
+                        <constraint firstAttribute="height" constant="30" id="VIX-7S-P7Z"/>
+                    </constraints>
+                    <color key="tintColor" red="0.392156899" green="0.74117648599999997" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" image="send_email"/>
+                    <connections>
+                        <action selector="replay:" destination="iN0-l3-epB" eventType="touchUpInside" id="mvv-bk-vhc"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="说点什么?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dnF-ww-dMd">
+                    <rect key="frame" x="40" y="13" width="331" height="24"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tx" translatesAutoresizingMaskIntoConstraints="NO" id="TQo-Eu-Pye">
+                    <rect key="frame" x="5" y="10" width="30" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Fc8-de-Di6"/>
+                        <constraint firstAttribute="width" constant="30" id="b9i-I4-Q81"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回复xxx:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="If1-So-k5N">
+                    <rect key="frame" x="40" y="10" width="328" height="0.0"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="lz5-ZZ-d45"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.7725490196" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TQo-Eu-Pye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="0HU-Rl-896"/>
+                <constraint firstItem="dnF-ww-dMd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1Mo-DF-Xax"/>
+                <constraint firstItem="TQo-Eu-Pye" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="6bt-Ty-enc"/>
+                <constraint firstItem="D5Q-ZP-onY" firstAttribute="leading" secondItem="If1-So-k5N" secondAttribute="trailing" constant="5" id="6lF-fT-pt5"/>
+                <constraint firstItem="If1-So-k5N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="7g4-ly-yjt"/>
+                <constraint firstAttribute="bottom" secondItem="dnF-ww-dMd" secondAttribute="bottom" constant="10" id="B8U-x6-XGQ"/>
+                <constraint firstAttribute="trailing" secondItem="D5Q-ZP-onY" secondAttribute="trailing" constant="10" id="Hg0-fS-AbN"/>
+                <constraint firstItem="dnF-ww-dMd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Jh4-DZ-ziw"/>
+                <constraint firstItem="D5Q-ZP-onY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="MJb-Mf-dwU"/>
+                <constraint firstItem="dnF-ww-dMd" firstAttribute="top" secondItem="If1-So-k5N" secondAttribute="bottom" constant="3" id="g1a-Ix-HC8"/>
+                <constraint firstItem="If1-So-k5N" firstAttribute="leading" secondItem="TQo-Eu-Pye" secondAttribute="trailing" constant="5" id="gaf-di-pC7"/>
+                <constraint firstItem="dnF-ww-dMd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="gma-Yk-iAT"/>
+                <constraint firstItem="D5Q-ZP-onY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hKo-Yz-rpI"/>
+                <constraint firstAttribute="bottom" secondItem="D5Q-ZP-onY" secondAttribute="bottom" constant="10" id="ps8-41-DaB"/>
+                <constraint firstAttribute="bottom" secondItem="dnF-ww-dMd" secondAttribute="bottom" constant="10" id="rwl-JL-GKJ"/>
+                <constraint firstItem="D5Q-ZP-onY" firstAttribute="leading" secondItem="dnF-ww-dMd" secondAttribute="trailing" constant="2" id="y1z-cr-ubw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1Mo-DF-Xax"/>
+                    <exclude reference="Jh4-DZ-ziw"/>
+                    <exclude reference="rwl-JL-GKJ"/>
+                    <exclude reference="hKo-Yz-rpI"/>
+                    <exclude reference="ps8-41-DaB"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="headView" destination="TQo-Eu-Pye" id="UGW-dd-6DI"/>
+                <outlet property="replayBtn" destination="D5Q-ZP-onY" id="ubw-ah-pZw"/>
+                <outlet property="replayHeight" destination="lz5-ZZ-d45" id="VJe-w7-oEC"/>
+                <outlet property="replayPerson" destination="If1-So-k5N" id="zCc-kM-ne1"/>
+                <outlet property="textView" destination="dnF-ww-dMd" id="v5p-E3-e5z"/>
+            </connections>
+            <point key="canvasLocation" x="279" y="487.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="send_email" width="32" height="32"/>
+        <image name="tx" width="200" height="200"/>
+    </resources>
+</document>
